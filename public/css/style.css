@@ -1,0 +1,1090 @@
+/* COLORS
+#FFE878
+#FFD447
+#FFBF00
+#523A28
+#2E1503
+#332013
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background: #FFE878;
+    max-width: 1512px;
+    margin: auto;
+}
+
+.fullscreen {
+    height: 100vh;
+}
+
+
+/* ---- Custom Scroll Bar ---- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* track */
+
+::-webkit-scrollbar-track {
+    background: #332013;
+}
+
+
+/* handle */
+
+::-webkit-scrollbar-thumb {
+    background: #9c6f4d;
+    box-shadow: 0 -100vh 0 100vh #9c6f4d;
+}
+
+
+/* ----------------- NAVBAR ------------------- */
+
+.mycontainer {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    background: #FFE878;
+}
+
+nav .mycontainer {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo-img {
+    flex-basis: content;
+    /* width: 50%; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+}
+
+.logo-img img {
+    width: 200px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+nav ul li {
+    color: #523a28;
+    font-weight: 600;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #523A28;
+    display: block;
+    margin: auto;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+ul button.mybutton {
+    padding: 5px 12px;
+    outline: none;
+    border: none;
+}
+
+
+/* Hamburger menu */
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    display: none;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    background: #332013;
+}
+
+
+/* Hamburger menu animation */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    background: #FFE878;
+    transform: rotate(45deg) translate(-1px, -1px);
+    -webkit-transform: rotate(45deg) translate(-1px, -1px);
+    -moz-transform: rotate(45deg) translate(-1px, -1px);
+    -ms-transform: rotate(45deg) translate(-1px, -1px);
+    -o-transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    background: #FFE878;
+    transform: rotate(-45deg) translate(-1px, 0);
+    -webkit-transform: rotate(-45deg) translate(-1px, 0);
+    -moz-transform: rotate(-45deg) translate(-1px, 0);
+    -ms-transform: rotate(-45deg) translate(-1px, 0);
+    -o-transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+
+/* Button */
+
+.mybutton {
+    background: #332013;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #FFE878;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    cursor: pointer;
+}
+
+.mybutton:hover,
+.mywabutton:hover {
+    background: #452d1c;
+    color: #FFD447;
+}
+
+.iconify-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+/* ----------------- SECTION BERANDA---------------- */
+
+#beranda {
+    padding-top: 30px;
+    display: flex;
+}
+
+header {
+    flex: 1;
+    padding: 30px 0;
+}
+
+header h3 {
+    align-items: center;
+    font-size: 40px;
+    color: #332013;
+}
+
+header h1 {
+    font-size: 55px;
+    color: #332013;
+}
+
+header p {
+    font-size: 18px;
+    /* width: 50%; */
+    margin-bottom: 30px;
+    color: #452d1c;
+}
+
+.catch-eye {
+    flex: 1;
+    /* background: #FFBF00; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main-image {
+    background: url('/img/cake-nobg.png') no-repeat center center / contain;
+    width: 600px;
+    height: 400px;
+}
+
+
+/* CIRCLES */
+
+.main-circle {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: #523a28;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 40%;
+    top: -5%;
+    z-index: -1;
+}
+
+.right-circle,
+.left-circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.right-circle {
+    background: #FFE878;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
+    left: 90%;
+    top: 185%;
+}
+
+.left-circle {
+    background: #523A28;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
+    left: -8%;
+    top: 290%;
+}
+
+
+/* SECTION ID */
+
+#kue,
+#snack,
+#tentang {
+    padding-top: 60px;
+    min-height: 650px;
+    position: relative;
+}
+
+
+/* ------------------- SECTION KUE ------------------ */
+
+#kue {
+    background: #523a28;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-section h1 {
+    font-size: 30px;
+    color: #FFE878;
+    flex: 1;
+}
+
+.title-section .line-left,
+.title-section .line-right {
+    flex: 4;
+    height: 2px;
+    background: #FFE878;
+}
+
+#kue .swiper {
+    margin-top: 60px;
+    padding: 0 50px;
+}
+
+.swiper-mycontainer {
+    width: 90%;
+    margin: auto;
+}
+
+.img_box img {
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 20px 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.swiper-slide {
+    background: #523A28;
+    /* box-shadow: inset 17px 17px 34px #3d2b1e, inset -17px -17px 34px #674932; */
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.text_box {
+    height: 100px;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 12px;
+}
+
+.text_box h1 {
+    color: #FFE878;
+}
+
+.text-closing {
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.text-closing p {
+    margin-top: 40px;
+    color: #FFE878;
+}
+
+.mywalink {
+    margin: 30px auto;
+    width: 60px;
+    display: block;
+}
+
+.mywaicon {
+    display: block;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    background: url('https://api.iconify.design/ic/baseline-whatsapp.svg?color=%23ffe878') no-repeat center center / contain;
+}
+
+.mywabutton {
+    padding: 5px 0;
+    width: 60px;
+    background: #332013;
+    /* margin: 20px auto; */
+    align-items: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    cursor: pointer;
+}
+
+#kue .swiper-button-prev,
+#kue .swiper-button-next {
+    color: #FFE878;
+}
+
+#kue .swiper-pagination-bullet {
+    background: #FFE878;
+}
+
+
+/* ------------------- SECTION SNACK ------------------ */
+
+#snack {
+    background: #FFE878;
+}
+
+#snack .swiper {
+    margin-top: 60px;
+    padding: 0 50px;
+}
+
+#snack .title-section h1,
+#snack .text_box h1,
+#snack .text-closing p {
+    color: #523A28;
+}
+
+#snack .line-left,
+#snack .line-right {
+    background: #523A28;
+    flex: 3;
+}
+
+#snack .swiper-slide {
+    border-radius: 20px;
+    background: #FFE878;
+    /* box-shadow: inset 17px 17px 34px #deca68, inset -17px -17px 34px #ffff88; */
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+#snack .swiper-button-prev,
+#snack .swiper-button-next {
+    color: #523a28;
+}
+
+#snack .swiper-pagination-bullet {
+    background: #523a28;
+}
+
+
+/* ---------------- SECTION TENTANG ------------- */
+
+#tentang {
+    background: #523A28;
+}
+
+#tentang .title-section {
+    margin-bottom: 30px;
+}
+
+.tentang-mycontainer {
+    display: flex;
+    flex-direction: row;
+    background: #523a28;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 95%;
+}
+
+.tentang-maps {
+    flex: 1;
+    padding: 30px 10px
+}
+
+.tentang-maps .gmaps {
+    width: 310px;
+    height: 300px;
+    margin: 0 auto 20px auto;
+}
+
+.gmaps iframe {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.caption-maps {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tentang .maps-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    flex: 1;
+}
+
+.maps-icon {
+    background: url('https://api.iconify.design/material-symbols/location-on-outline.svg?color=%23ffe878') no-repeat center center / contain;
+}
+
+.caption-maps p {
+    padding: 5px;
+    color: #FFE878;
+    font-size: 13px;
+    line-height: 20px;
+    flex: 3;
+}
+
+.tentang-profil {
+    background: #FFE878;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.tentang-profil .img-profil {
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: #523A28;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 20px auto;
+}
+
+.tentang-profil .img-profil img {
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.tentang-profil h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tentang-profil h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.tentang-profil p {
+    width: 80%;
+    font-size: 13px;
+    margin: 0 auto 40px auto;
+}
+
+.tentang-sosmed {
+    flex: 1;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    align-items: center;
+}
+
+.sosmed-image img {
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.sosmed-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 25px;
+}
+
+.sosmed-link a {
+    flex: 1;
+}
+
+#tentang .wa-icon,
+#tentang .ig-icon {
+    display: block;
+    height: 30px;
+    margin: auto;
+}
+
+.wa-icon {
+    background: url('https://api.iconify.design/ic/baseline-whatsapp.svg?color=%23ffe878') no-repeat center center / contain;
+}
+
+.ig-icon {
+    background: url('https://api.iconify.design/mdi/instagram.svg?color=%23ffe878') no-repeat center center / contain;
+}
+
+.sosmed-caption {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tentang-sosmed .caption {
+    font-size: 12px;
+    text-align: center;
+    flex: 1;
+}
+
+.tentang-sosmed .caption p {
+    color: #FFE878;
+    padding: 0 5px;
+}
+
+.gmaps-mobile {
+    display: none;
+}
+
+
+/* ---------------- SECTION KONTAK ---------------*/
+
+#kontak {
+    background: #523A28;
+    padding: 80px 0;
+}
+
+#kontak .title-section {
+    margin-bottom: 30px;
+}
+
+.kontak-mycontainer {
+    background: #523a28;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.25);
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.message-us {
+    padding: 40px 30px;
+    background: #523a28;
+    width: 50%;
+    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+}
+
+.message-us form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-us label {
+    width: 30%;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    color: #FFE878;
+}
+
+.message-us input,
+.message-us textarea {
+    color: #FFE878;
+    width: 70%;
+    font-size: 16px;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    background: #523A28;
+    box-shadow: inset 5px 5px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.message-us textarea {
+    resize: none;
+}
+
+.nothing {
+    width: 80%;
+}
+
+.message-us form button {
+    margin-top: 40px;
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    background: #332013;
+    color: #FFE878;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.social-link {
+    padding: 60px 0;
+    width: 50%;
+    background: #FFE878;
+    border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+}
+
+.social-link .social {
+    width: 60%;
+    background: #523a28;
+    height: 50px;
+    margin: 0 0 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.social .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #FFE878;
+    flex: 2;
+}
+
+.produk-indonesia img {
+    width: 40%;
+    margin: 0 10% 0 auto;
+    display: block;
+}
+
+.social .social-text {
+    flex: 4;
+    font-size: 16;
+    color: #FFE878;
+}
+
+.social .social-icon {
+    flex: 1;
+}
+
+.social .wa-icon,
+.social .ig-icon,
+.social .maps-icon {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+
+/* ------------- FOOTER ------------ */
+
+footer {
+    background: #452d1c;
+    padding: 10px 0;
+}
+
+footer .mycontainer {
+    display: flex;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo img {
+    width: 200px;
+    margin: -40px auto 0 auto;
+}
+
+.copyright {
+    flex: 4;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p {
+    line-height: 16px;
+    font-size: 16px;
+    color: #FFE878;
+}
+
+.copyright-icon {
+    background: url('https://api.iconify.design/ic/baseline-copyright.svg?color=%23ffe878') no-repeat center center / contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.developer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.developer p {
+    color: #FFBF00;
+}
+
+.developer a {
+    text-decoration: underline;
+    color: #FFBF00;
+}
+
+.github-icon {
+    background: url('https://api.iconify.design/mdi/github.svg?color=%23ffbf00') no-repeat center center / contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+
+/* ================== RESPONSIVE DESIGN =============== */
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        flex-basis: 70%;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mycontainer {
+        width: 100;
+    }
+    /* ==== NAVIGATION ==== */
+    .menu-toggle {
+        display: flex !important;
+    }
+    nav .logo-img {
+        width: 80%;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 70%;
+        padding: 20% 0 40% 0;
+        align-items: center;
+        justify-content: space-evenly;
+        background: #523a28;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+    }
+    nav ul.slide {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    nav ul li a {
+        color: #FFE878;
+    }
+    ul button.mybutton {
+        padding: 10px 50px;
+    }
+    /* ==== BERANDA ===== */
+    #beranda {
+        padding-top: 40px;
+    }
+    header h3 {
+        font-size: 30px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header p {
+        width: 80%;
+        font-size: 15px;
+        color: #000;
+    }
+    /* === BERANDA === */
+    #beranda {
+        flex-direction: column;
+    }
+    .catch-eye {
+        z-index: -1;
+        margin-top: -70%;
+    }
+    .catch-eye {
+        padding-top: 30%;
+    }
+    .main-image {
+        width: 600px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+    }
+    .main-circle {
+        top: -20%;
+    }
+    /* === KUE === */
+    .title-section .line-left,
+    .title-section .line-right {
+        flex: 1;
+    }
+    .swiper-mycontainer {
+        width: 100%;
+    }
+    .img_box img {
+        width: 200px;
+        padding: 10px 5px;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        width: 20px;
+    }
+    .text-closing {
+        padding-bottom: 40px;
+    }
+    /* === SNACK === */
+    #snack .title-section .line-left,
+    #snack .title-section .line-right {
+        flex: 0.5
+    }
+    /* === TENTANG === */
+    #tentang {
+        padding-bottom: 40px;
+    }
+    .tentang-mycontainer {
+        flex-direction: column;
+    }
+    .tentang-maps {
+        padding: 20px 10px;
+    }
+    .tentang-maps .gmaps {
+        width: 280px;
+        height: 280px;
+    }
+    .gmaps-mobile {
+        display: block;
+    }
+    .gmaps-desktop {
+        display: none;
+    }
+    .sosmed-image img {
+        width: 280px;
+    }
+    .sosmed-link {
+        padding: 10px;
+    }
+    /* === KONTAK === */
+    .kontak-mycontainer {
+        flex-direction: column;
+    }
+    .message-us,
+    .social-link {
+        width: 100%;
+    }
+    .message-us {
+        padding: 40px 20px;
+        border-radius: 20px 20px 0 0;
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+    }
+    .message-us form button {
+        width: 40%;
+        margin: 0 0 0 auto;
+    }
+    .social-link .social {
+        width: 80%;
+    }
+    .social .arrow-right {
+        flex: .5;
+        margin-left: -2px;
+    }
+    .social-link {
+        border-radius: 0 0 20px 20px;
+        -webkit-border-radius: 0 0 20px 20px;
+        -moz-border-radius: 0 0 20px 20px;
+        -ms-border-radius: 0 0 20px 20px;
+        -o-border-radius: 0 0 20px 20px;
+    }
+    /* === FOOTER === */
+    footer .mycontainer {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .footer-logo {
+        margin: auto;
+    }
+    .footer-logo img {
+        margin: -40px auto 0 auto;
+    }
+    .copyright p,
+    .developer {
+        font-size: 12px;
+    }
+    .developer,
+    .copyright {
+        flex: 1;
+        margin: 10px auto 0 auto;
+    }
+}
