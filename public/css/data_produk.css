@@ -30,7 +30,8 @@ tbody tr td img {
     justify-content: space-around;
 }
 
-tr td a {
+tr td a,
+tr td form button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +43,11 @@ tr td a {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     background: #ccc;
+}
+
+tr td form button {
+    outline: none;
+    border: none;
 }
 
 .icon-detail,
@@ -265,6 +271,10 @@ ul button.mybutton {
     color: #FFD447;
 }
 
+.hidden-desk {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     nav ul {
         flex-basis: 70%;
@@ -275,8 +285,15 @@ ul button.mybutton {
 }
 
 @media screen and (max-width: 700px) {
+    .aksi-button {
+        display: flex;
+        justify-content: space-around;
+    }
     .hidden-info {
         display: none;
+    }
+    .hidden-desk {
+        display: flex;
     }
     .mycontainer {
         width: 100;
