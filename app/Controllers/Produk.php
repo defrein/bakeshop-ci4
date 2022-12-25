@@ -58,11 +58,29 @@ class Produk extends BaseController
                 ]
             ],
             // validasi kolom lainnya
+            'gambar' => [
+                'rules' => 'max_size[gambar,1024]|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'Ukuran gambar terlalu besar',
+                    'is_image' => 'Yang Anda pilih bukan gambar',
+                    'mime_in' => 'Yang Anda pilih bukan gambar'
+                ]
+            ]
         ])) {
             return redirect()->to('/produk/create')->withInput();
         }
 
         // ambil gambar
+        $fileGambar = $this->request->getFile('gambar');
+        // apakah tidak ada gambar yg diupload
+        if ($fileGambar->getError() == 4) {
+            $namaGambar = 'default.jpg';
+        } else {
+            // generate nama gambar random
+            $namaGambar = $fileGambar->getRandomName();
+            // pindahkan ke folder img
+            $fileGambar->move('img', $namaGambar);
+        }
 
 
         $slug = url_title($this->request->getVar('nama_produk'), '-', true);
@@ -71,7 +89,7 @@ class Produk extends BaseController
             'slug' => $slug,
             'kategori' => $this->request->getVar('kategori'),
             'harga' => $this->request->getVar('harga'),
-            'gambar' => $this->request->getVar('gambar')
+            'gambar' => $namaGambar
         ]);
 
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
@@ -107,9 +125,32 @@ class Produk extends BaseController
                     'required' => 'nama produk harus diisi.',
                     'is_unique' => 'nama produk sudah ada.'
                 ]
+            ],
+            'gambar' => [
+                'rules' => 'max_size[gambar,1024]|is_image[gambar]|mime_in[gambar,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'max_size' => 'Ukuran gambar terlalu besar',
+                    'is_image' => 'Yang Anda pilih bukan gambar',
+                    'mime_in' => 'Yang Anda pilih bukan gambar'
+                ]
             ]
         ])) {
             return redirect()->to('/produk/edit/' . $this->request->getVar('slug'))->withInput();
+        }
+
+        $fileGambar = $this->request->getFile('gambar');
+
+        // cek gambar, apakah tetap gambar lama
+        if ($fileGambar->getError() == 4) {
+            $namaGambar = $this->request->getVar('gambarLama');
+        } else {
+            $namaGambar = $fileGambar->getRandomName();
+            // pindahkan gambar
+            $fileGambar->move('img', $namaGambar);
+            if ($this->request->getVar('gambarLama') != 'default.jpg') {
+                // hapus file lama
+                unlink('img/' . $this->request->getVar('gambarLama'));
+            }
         }
 
         $slug = url_title($this->request->getVar('nama_produk'), '-', true);
@@ -119,7 +160,7 @@ class Produk extends BaseController
             'slug' => $slug,
             'kategori' => $this->request->getVar('kategori'),
             'harga' => $this->request->getVar('harga'),
-            'gambar' => $this->request->getVar('gambar')
+            'gambar' => $namaGambar
         ]);
 
         session()->setFlashdata('pesan', 'Data berhasil diubah.');
@@ -129,10 +170,14 @@ class Produk extends BaseController
 
     public function delete($id)
     {
+        // cari gambar berdasarkan id
+        $produk = $this->produkModel->find($id);
+        if ($produk['gambar'] != 'default.jpg') {
+            //hapus gambar
+            unlink('img/' . $produk['gambar']);
+        }
 
-
-        $this->produkModel->where('id_produk', $id);
-        $this->produkModel->delete();
+        $this->produkModel->delete($id);
         session()->setFlashdata('pesan', 'Data berhasil dihapus');
         return redirect()->to('/produk');
     }

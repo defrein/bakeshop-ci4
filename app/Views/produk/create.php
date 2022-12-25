@@ -38,9 +38,20 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="gambar" class="col-sm-2 col-form-label">Gambar</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="gambar" name="gambar" value="<?= old('gambar'); ?>">
+                    <label for="sampul" class="col-sm-2 col-form-label">Gambar</label>
+                    <div class="col-sm-2">
+                        <img src="/img/default.jpg" class="img-thumbnail img-preview" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="custom-file">
+                            <input type="file"
+                                class="custom-file-input <?= ($validation->hasError('gambar')) ? 'is-invalid' : ''; ?>"
+                                id="gambar" name="gambar" onchange="previewImg()">
+                            <div class="invalid-feedback">
+                                <?= $validation->getError('gambar'); ?>
+                            </div>
+                            <label class="custom-file-label" for="gambar">Pilih Gambar</label>
+                        </div>
                     </div>
                 </div>
 

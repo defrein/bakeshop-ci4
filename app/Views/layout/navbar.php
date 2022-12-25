@@ -11,7 +11,7 @@
             <li><a href="/#tentang">TENTANG</a></li>
             <li><a href="/#kontak">KONTAK</a></li>
             <li><a href="/produk">PRODUK</a></li>
-            <li><a href="#">KALKULATOR</a></li>
+            <li><a href="/kalkulator">KALKULATOR</a></li>
             <button class="mybutton btnlogin" href="#">LOGIN</button>
         </ul>
         <div class="menu-toggle">

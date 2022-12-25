@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    /* font-size: 16px; */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.hitung-harga {
+    width: 60%;
+    margin: auto;
+    background: #FFE878;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hasil,
+.metode-field,
+.data-usaha,
+.profit {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.calc-button {
+    display: flex;
+}
+
+.metode-field {
+    justify-content: space-between;
+}
+
+.hasil {
+    width: 100%;
+}
+
+.hasil input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.metode-field .answer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.metode-field .mylabel,
+.data-usaha .mylabel,
+.profit .mylabel {
+    flex: 1;
+    padding: 10px 0;
+}
+
+.data-usaha .answer,
+.profit .answer {
+    flex: 1;
+}
+
+.data-usaha .answer input,
+.profit .answer input {
+    width: 100%;
+    padding: 10px 10px;
+    background: #fff;
+    font-size: 13px;
+}
+
+p span,
+label span {
+    color: red;
+}
+
+.calc-button {
+    justify-content: flex-end;
+}
+
+.calc-button button {
+    padding: 6px 10px;
+    color: #fff;
+}
+
+#reset_btn {
+    background: red;
+}
+
+#hitung {
+    background: teal;
+}
+
+.info-hitung {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.markup-info,
+.margin-info {
+    padding: 20px;
+    width: 48%;
+}
+
+.markup-info p,
+.margin-info p {
+    padding: 10px 0;
+}
+
+.markup-info {
+    background: #E5BA73;
+}
+
+.margin-info {
+    background: #C58940;
+}
+
+.rumus-metode {
+    background: #FFE878;
+    padding: 15px 5px 15px 5px;
+    border-left: 5px solid #FFBF00;
+}
+
+@media screen and (max-width: 700px) {
+    .metode-field,
+    .data-usaha,
+    .profit {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-hitung {
+        flex-direction: column;
+    }
+    .markup-info,
+    .margin-info {
+        width: 100%;
+    }
+    .markup-info {
+        margin-bottom: 20px;
+    }
+    /* form {
+        height: 300px;
+    } */
+    .hitung-harga {
+        width: 90%;
+    }
+}

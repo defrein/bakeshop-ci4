@@ -13,8 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="/css/data_produk.css">
+    <link rel="stylesheet" href="/css/calc.css">
 </head>
 
 <body>
@@ -50,24 +50,8 @@
     menuToggle.addEventListener('click', function() {
         nav.classList.toggle('slide')
     })
-
-    function previewImg() {
-        const gambar = document.querySelector('#gambar');
-        const gambarLabel = document.querySelector('.custom-file-label');
-        const imgPreview = document.querySelector('.img-preview');
-
-        gambarLabel.textContent = gambar.files[0].name;
-
-        const fileGambar = new FileReader();
-        fileGambar.readAsDataURL(gambar.files[0]);
-
-        fileGambar.onload = function(e) {
-            imgPreview.src = e.target.result;
-        }
-    }
     </script>
-    <!-- iconify js -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="js/calc.js"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -76,8 +60,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
     </script>
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 </body>
 

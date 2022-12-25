@@ -39,12 +39,10 @@ $routes->get('/', 'Home::index');
 $routes->get('/produk/create', 'Produk::create');
 $routes->get('/produk/save', 'Produk::save');
 $routes->get('/produk/edit/(:segment)', 'Produk::edit/$1');
-// $routes->get('/produk/update/', 'Produk::update');
 $routes->get('/produk', 'Produk::index');
+$routes->get('/kalkulator', 'Kalkulator::index');
 $routes->delete('/produk/(:num)', 'Produk::delete/$1');
 $routes->get('/produk/(:any)', 'Produk::detail/$1');
-// $routes->get('/coba', 'Coba::about');
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing
