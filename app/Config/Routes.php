@@ -36,13 +36,15 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/produk/create', 'Produk::create');
-$routes->get('/produk/save', 'Produk::save');
-$routes->get('/produk/edit/(:segment)', 'Produk::edit/$1');
-$routes->get('/produk', 'Produk::index');
-$routes->get('/kalkulator', 'Kalkulator::index');
-$routes->delete('/produk/(:num)', 'Produk::delete/$1');
-$routes->get('/produk/(:any)', 'Produk::detail/$1');
+$routes->get('/produk/create', 'Produk::create', ['filter' => 'adminFilter']);
+$routes->get('/produk/save', 'Produk::save', ['filter' => 'adminFilter']);
+$routes->get('/produk/edit/(:segment)', 'Produk::edit/$1', ['filter' => 'adminFilter']);
+$routes->get('/produk', 'Produk::index', ['filter' => 'adminFilter']);
+$routes->get('/kalkulator', 'Kalkulator::index', ['filter' => 'adminFilter']);
+$routes->get('/login', 'Login::index', ['filter' => 'umumFilter']);
+$routes->get('/logout', 'Login::logout', ['filter' => 'adminFilter']);
+$routes->delete('/produk/(:num)', 'Produk::delete/$1', ['filter' => 'adminFilter']);
+$routes->get('/produk/(:any)', 'Produk::detail/$1', ['filter' => 'adminFilter']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

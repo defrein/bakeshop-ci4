@@ -120,10 +120,11 @@ nav ul li:hover::after {
     width: 100%;
 }
 
-ul button.mybutton {
+ul a.mybutton {
     padding: 5px 12px;
     outline: none;
     border: none;
+    text-decoration: none;
 }
 
 
@@ -769,6 +770,7 @@ header p {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    cursor: pointer;
 }
 
 .social-link {
@@ -881,6 +883,10 @@ footer .mycontainer {
 .developer a {
     text-decoration: underline;
     color: #FFBF00;
+}
+
+.developer a:hover {
+    color: #FFE878;
 }
 
 .github-icon {

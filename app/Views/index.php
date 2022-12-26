@@ -14,7 +14,7 @@
             <h1>CAKE AND SNACK</h1>
             <p>Kue dan snack rumahan yang bikin nagih, cocok untuk acara formal maupun non-formal Anda. Cukup pesan
                 dari rumah, kami akan mengantarnya ke tempat Anda. </p>
-            <a href="#" class="mybutton btnpesan">Pesan Sekarang</a>
+            <a href="https://wa.me/6281348955744" class="mybutton btnpesan">Pesan Sekarang</a>
         </header>
         <div class="catch-eye">
             <div class="main-image"></div>
@@ -50,7 +50,8 @@
         <div class="text-closing">
             <p>Kami juga menyediakan berbagai pilihan lain sesuai selera, hubungi kami melalui WhatsApp untuk info
                 selengkapnya. </p>
-            <a class="mywalink" href="#">
+            <a class="mywalink"
+                href="https://wa.me/6281348955744?text=Hai,%20saya%20tertarik%20untuk%20memesan%20kue%20Hesty%20Bakeshop">
                 <div class="mywabutton">
                     <div class="mywaicon"></div>
                 </div>
@@ -87,11 +88,14 @@
         <div class="text-closing">
             <p>Kami juga menyediakan berbagai pilihan lain sesuai selera, hubungi kami melalui WhatsApp untuk info
                 selengkapnya. </p>
-            <a class="mywalink" href="#">
+            <a class="mywalink"
+                href="https://wa.me/6281348955744?text=Hai,%20saya%20tertarik%20untuk%20memesan%20snack%20Hesty%20Bakeshop">
                 <div class="mywabutton">
                     <div class="mywaicon"></div>
                 </div>
             </a>
+            <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/6281348955744"> <img alt="Chat on WhatsApp"
+                    src="/img/WhatsAppButtonGreenMedium.svg" /> -->
         </div>
     </div>
 </section>
@@ -135,10 +139,10 @@
                     <img src="img/sosmed.png" alt="">
                 </div>
                 <div class="sosmed-link">
-                    <a href="#">
+                    <a href="https://wa.me/6281348955744" target="_blank">
                         <div class="wa-icon"></div>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/hesty_bakedshop/" target="_blank">
                         <div class="ig-icon"></div>
                     </a>
                 </div>
@@ -177,22 +181,23 @@
             <div class="social-link">
                 <div class="social">
                     <div class="arrow-right"></div>
-                    <a class="social-text" href="#">+62 813-4895-5744</a>
-                    <a class="social-icon" href="#">
+                    <a class="social-text" href="https://wa.me/6281348955744" target="_blank">+62 813-4895-5744</a>
+                    <a class="social-icon" href="https://wa.me/6281348955744" target="_blank">
                         <div class="wa-icon"></div>
                     </a>
                 </div>
                 <div class="social">
                     <div class="arrow-right"></div>
-                    <a class="social-text" href="#">@hesty_bakedshop
-                        <a class="social-icon" href="#">
-                            <div class="ig-icon"></div>
-                        </a>
+                    <a class="social-text" href="https://www.instagram.com/hesty_bakedshop/"
+                        target="_blank">@hesty_bakedshop</a>
+                    <a class="social-icon" href="https://www.instagram.com/hesty_bakedshop/" target="_blank">
+                        <div class="ig-icon"></div>
+                    </a>
                 </div>
                 <div class="social">
                     <div class="arrow-right"></div>
-                    <a class="social-text" href="#">Banjarmasin</a>
-                    <a class="social-icon" href="#">
+                    <a class="social-text" href="https://goo.gl/maps/yscTbBzY8jy4M7eu7" target="_blank">Banjarmasin</a>
+                    <a class="social-icon" href="https://goo.gl/maps/yscTbBzY8jy4M7eu7" target="_blank">
                         <div class="maps-icon"></div>
                     </a>
                 </div>

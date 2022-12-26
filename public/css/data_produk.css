@@ -161,7 +161,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-ul button.mybutton {
+ul a.mybutton {
     padding: 5px 12px;
     outline: none;
     border: none;

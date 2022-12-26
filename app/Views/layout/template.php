@@ -22,7 +22,7 @@
     <footer>
         <div class="mycontainer">
             <div class="footer-logo">
-                <img src="img/logo-light.png" alt="">
+                <a href="#"><img src="img/logo-light.png" alt=""></a>
             </div>
             <div class="copyright">
                 <p>COPYRIGHT</p>
@@ -30,7 +30,7 @@
                 <p>2022 HESTY BAKESHOP</p>
             </div>
             <div class="developer">
-                <p>Made by <a href="#">DEF </a></p>
+                <p>Made by <a href="https://github.com/defrein" target="_blank">DEF </a></p>
                 <a href="#">
                     <div class="github-icon"></div>
                 </a>
