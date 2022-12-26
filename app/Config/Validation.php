@@ -8,6 +8,9 @@ use CodeIgniter\Validation\FileRules;
 use CodeIgniter\Validation\FormatRules;
 use CodeIgniter\Validation\Rules;
 
+# tambahkan perintah use untuk file custom validation
+use \App\Validation\PasswordStrength;
+
 class Validation extends BaseConfig
 {
     // --------------------------------------------------------------------
@@ -25,6 +28,7 @@ class Validation extends BaseConfig
         FormatRules::class,
         FileRules::class,
         CreditCardRules::class,
+        PasswordStrength::class,
     ];
 
     /**

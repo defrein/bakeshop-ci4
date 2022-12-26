@@ -37,13 +37,24 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/produk/create', 'Produk::create', ['filter' => 'adminFilter']);
+$routes->get('/admin/create', 'Admin::create', ['filter' => 'adminFilter']);
+
 $routes->get('/produk/save', 'Produk::save', ['filter' => 'adminFilter']);
+$routes->get('/admin/save', 'Admin::save', ['filter' => 'adminFilter']);
+
 $routes->get('/produk/edit/(:segment)', 'Produk::edit/$1', ['filter' => 'adminFilter']);
+
 $routes->get('/produk', 'Produk::index', ['filter' => 'adminFilter']);
+$routes->get('/admin', 'Admin::index', ['filter' => 'adminFilter']);
+
 $routes->get('/kalkulator', 'Kalkulator::index', ['filter' => 'adminFilter']);
+
 $routes->get('/login', 'Login::index', ['filter' => 'umumFilter']);
 $routes->get('/logout', 'Login::logout', ['filter' => 'adminFilter']);
+
 $routes->delete('/produk/(:num)', 'Produk::delete/$1', ['filter' => 'adminFilter']);
+$routes->delete('/admin/(:num)', 'Admin::delete/$1', ['filter' => 'adminFilter']);
+
 $routes->get('/produk/(:any)', 'Produk::detail/$1', ['filter' => 'adminFilter']);
 /*
  * --------------------------------------------------------------------
