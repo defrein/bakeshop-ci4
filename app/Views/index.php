@@ -142,7 +142,7 @@
                     <a href="https://wa.me/6281348955744" target="_blank">
                         <div class="wa-icon"></div>
                     </a>
-                    <a href="https://www.instagram.com/hesty_bakedshop/" target="_blank">
+                    <a href="https://www.instagram.com/hesty_bakeshop/" target="_blank">
                         <div class="ig-icon"></div>
                     </a>
                 </div>
@@ -188,9 +188,9 @@
                 </div>
                 <div class="social">
                     <div class="arrow-right"></div>
-                    <a class="social-text" href="https://www.instagram.com/hesty_bakedshop/"
+                    <a class="social-text" href="https://www.instagram.com/hesty_bakeshop/"
                         target="_blank">@hesty_bakedshop</a>
-                    <a class="social-icon" href="https://www.instagram.com/hesty_bakedshop/" target="_blank">
+                    <a class="social-icon" href="https://www.instagram.com/hesty_bakeshop/" target="_blank">
                         <div class="ig-icon"></div>
                     </a>
                 </div>
