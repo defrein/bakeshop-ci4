@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+    background: #FFE878;
 }
 
 section {
@@ -16,7 +17,7 @@ section {
     justify-content: center !important;
     align-items: center !important;
     min-height: 100vh;
-    background: #fff;
+    /* background: #fff; */
     background-size: cover;
     background-position: right;
 }
