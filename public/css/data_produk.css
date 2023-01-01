@@ -9,11 +9,10 @@
     list-style: none;
 }
 
-
-/* html,
+html,
 body {
     overflow-x: hidden;
-} */
+}
 
 body {
     max-width: 1512px;
@@ -162,9 +161,10 @@ nav ul li a:hover {
 }
 
 ul a.mybutton {
-    padding: 5px 12px;
+    /* padding: 5px 12px; */
     outline: none;
     border: none;
+    text-decoration: none;
 }
 
 

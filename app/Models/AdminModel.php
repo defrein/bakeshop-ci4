@@ -22,4 +22,13 @@ class AdminModel extends Model
     {
         return $this->countAll();
     }
+    public function countSuperAdmin()
+    {
+        return $this->where('role', 'super admin')->countAll();
+    }
+
+    public function getRoleAdmin($id)
+    {
+        return $this->select(['role'])->where('id', $id)->first();
+    }
 }

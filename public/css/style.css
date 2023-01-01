@@ -256,7 +256,7 @@ header h3 {
 }
 
 header h1 {
-    font-size: 55px;
+    font-size: 50px;
     color: #332013;
 }
 
@@ -867,17 +867,19 @@ footer .mycontainer {
     background: url('https://api.iconify.design/ic/baseline-copyright.svg?color=%23ffe878') no-repeat center center / contain;
     width: 20px;
     height: 20px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .developer {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .developer p {
     color: #FFBF00;
+    line-height: 12px;
 }
 
 .developer a {
@@ -891,8 +893,8 @@ footer .mycontainer {
 
 .github-icon {
     background: url('https://api.iconify.design/mdi/github.svg?color=%23ffbf00') no-repeat center center / contain;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     display: inline-block;
 }
 

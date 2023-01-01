@@ -11,9 +11,9 @@
 
             <h3>THE BEST</h3>
             <h1>HOMEMADE</h1>
-            <h1>CAKE AND SNACK</h1>
-            <p>Kue dan snack rumahan yang bikin nagih, cocok untuk acara formal maupun non-formal Anda. Cukup pesan
-                dari rumah, kami akan mengantarnya ke tempat Anda. </p>
+            <h1>CAKE AND COOKIES</h1>
+            <p>Menyediakan aneka kue basah dan kue kering yang dibuat dari bahan berkualitas tanpa bahan pengawet dengan
+                harga bersahabat. Kami juga menyediakan snackbox yang cocok untuk berbagai macam acara.</p>
             <a href="https://wa.me/6281348955744" class="mybutton btnpesan">Pesan Sekarang</a>
         </header>
         <div class="catch-eye">
@@ -126,10 +126,10 @@
             </div>
             <div class="tentang-profil">
                 <div class="img-profil">
-                    <img src="img/kaela.png" alt="">
+                    <img src="img/Logo_Hesty_Bakeshop_RGB.png" alt="">
                 </div>
-                <h3>Kaela Kovalskia</h3>
-                <h2>OWNER</h2>
+                <!-- <h3>Kaela Kovalskia</h3> -->
+                <h2>HESTY BAKESHOP</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit incidunt blanditiis.
                     Corrupti, corporis! Libero, accusantium quam, blanditiis et aliquam, est dolorum ex amet vel hic
                     optio quibusdam repudiandae sed.</p>
