@@ -30,9 +30,9 @@
                         <th scope="row"><?= $i++; ?></th>
                         <td><?= $a['username']; ?></td>
                         <td><?= $a['nama_admin']; ?></td>
-                        <td class="hidden-info"><?= $a['role']; ?></td>
+                        <td class="hidden-info"><?= $a['jenis_role']; ?></td>
                         <td class="kolom-aksi">
-                            <form action="/admin/<?= $a['id']; ?>" method="post" class="d-inline">
+                            <form action="/admin/<?= $a['id_admin']; ?>" method="post" class="d-inline">
                                 <?= csrf_field(); ?>
                                 <input type="hidden" name="_method" value="DELETE">
                                 <button type="submit" class="bg-hapus my-1"

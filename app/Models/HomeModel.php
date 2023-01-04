@@ -10,11 +10,12 @@ class HomeModel extends Model
 
     public function getKue()
     {
-        $this->select('*');
-        return $this->where('kategori', 'kue')->findAll();
+        $this->select('*')->join('kategori_produk', 'kategori_produk.id_kategori=produk.id_kategori');
+        return $this->where('produk.id_kategori', '1')->findAll();
     }
     public function getSnack()
     {
-        return $this->table('produk')->where('kategori', 'snack')->findAll();
+        $this->select('*')->join('kategori_produk', 'kategori_produk.id_kategori=produk.id_kategori');
+        return $this->where('produk.id_kategori', '2')->findAll();
     }
 }

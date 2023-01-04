@@ -19,12 +19,12 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
+                    <label for="id_kategori" class="col-sm-2 col-form-label">Kategori</label>
                     <div class="col-sm-10">
-                        <select id="kategori" name="kategori" class="custom-select"
+                        <select id="id_kategori" name="id_kategori" class="custom-select"
                             aria-describedby="kategoriHelpBlock">
-                            <option <?= old('kategori') == 'kue' ? 'selected' : ''; ?> value="kue">Kue</option>
-                            <option <?= old('kategori') == 'snack' ? 'selected' : ''; ?> value="snack">Snack</option>
+                            <option <?= old('id_kategori') == 'kue' ? 'selected' : ''; ?> value="1">Kue</option>
+                            <option <?= old('id_kategori') == 'snack' ? 'selected' : ''; ?> value="2">Snack</option>
                         </select>
                         <span id="kategoriHelpBlock" class="form-text text-muted">Pilih Kategori</span>
                         <div class="invalid-feedback">

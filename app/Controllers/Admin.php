@@ -61,7 +61,7 @@ class Admin extends BaseController
             'nama_admin' => $this->request->getVar('nama_admin'),
             'username' => $this->request->getVar('username'),
             'password' => md5($this->request->getVar('password')),
-            'role' => $this->request->getVar('role'),
+            'id_role' => $this->request->getVar('id_role'),
         ]);
 
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');

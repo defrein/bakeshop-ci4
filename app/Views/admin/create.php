@@ -7,7 +7,7 @@
 
             <form action="/admin/save" method="post" enctype="multipart/form-data" class="my-5">
                 <?= csrf_field(); ?>
-                <input type="hidden" name="role" id="role" value="admin">
+                <input type="hidden" name="id_role" id="id_role" value="2">
                 <div class="row mb-3">
                     <label for="nama_admin" class="col-sm-2 col-form-label">Nama Admin</label>
                     <div class="col-sm-10">

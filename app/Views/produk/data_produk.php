@@ -34,7 +34,7 @@
                         <td class="hidden-info"><?= $p['created_at']; ?></td>
                         <td><img src="/img/<?= $p['gambar']; ?>" alt="" class="gambar"></td>
                         <td><?= $p['nama_produk']; ?></td>
-                        <td style="text-transform: capitalize;" class="hidden-info"><?= $p['kategori']; ?></td>
+                        <td style="text-transform: capitalize;" class="hidden-info"><?= $p['jenis_kategori']; ?></td>
                         <td class="hidden-info">Rp<?= $p['harga']; ?></td>
                         <td class="hidden-info"><?= $p['updated_at']; ?></td>
                         <td class="kolom-aksi">

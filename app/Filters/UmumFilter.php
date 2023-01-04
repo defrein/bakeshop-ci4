@@ -11,7 +11,7 @@ class UmumFilter implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         // Do something here
-        if (session()->get('role')) {
+        if (session()->get('id_role')) {
             return redirect()->to('/produk');
         }
     }

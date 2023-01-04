@@ -23,7 +23,7 @@ class Login extends BaseController
             }
             if (empty($err)) {
                 $dataAdmin = $this->loginModel->where("username", $username)->first();
-                if (isset($dataAdmin['password']) != md5($password)) {
+                if (isset($dataAdmin['password']) != md5(isset($password))) {
                     $err = "Username dan password tidak sesuai";
                 }
             }
@@ -31,7 +31,7 @@ class Login extends BaseController
                 $dataSesi = [
                     'username' => $dataAdmin['username'],
                     'nama_admin' => $dataAdmin['nama_admin'],
-                    'role' => $dataAdmin['role']
+                    'id_role' => $dataAdmin['id_role']
                 ];
                 session()->set($dataSesi);
                 return redirect()->to('/produk');

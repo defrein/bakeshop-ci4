@@ -189,7 +189,7 @@
                 <div class="social">
                     <div class="arrow-right"></div>
                     <a class="social-text" href="https://www.instagram.com/hesty_bakeshop/"
-                        target="_blank">@hesty_bakedshop</a>
+                        target="_blank">@hesty_bakeshop</a>
                     <a class="social-icon" href="https://www.instagram.com/hesty_bakeshop/" target="_blank">
                         <div class="ig-icon"></div>
                     </a>

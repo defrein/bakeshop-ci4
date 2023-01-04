@@ -87,7 +87,7 @@ class Produk extends BaseController
         $this->produkModel->save([
             'nama_produk' => $this->request->getVar('nama_produk'),
             'slug' => $slug,
-            'kategori' => $this->request->getVar('kategori'),
+            'id_kategori' => $this->request->getVar('id_kategori'),
             'harga' => $this->request->getVar('harga'),
             'gambar' => $namaGambar
         ]);
@@ -158,7 +158,7 @@ class Produk extends BaseController
             'id_produk' => $id,
             'nama_produk' => $this->request->getVar('nama_produk'),
             'slug' => $slug,
-            'kategori' => $this->request->getVar('kategori'),
+            'id_kategori' => $this->request->getVar('id_kategori'),
             'harga' => $this->request->getVar('harga'),
             'gambar' => $namaGambar
         ]);

@@ -32,7 +32,7 @@ section {
     min-height: 400px;
     background: rgb(82, 58, 40);
     /* background: #2E1503; */
-    background: linear-gradient(90deg, rgba(82, 58, 40, 1) 0%, rgba(51, 32, 19, 1) 100%);
+    background: linear-gradient(90deg, #523a28 0%, #332013 100%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -116,7 +116,7 @@ section {
 
 .form .inputBox input[type="submit"] {
     background: rgb(255, 232, 120);
-    background: linear-gradient(90deg, rgba(255, 232, 120, 1) 0%, rgba(255, 191, 0, 1) 100%);
+    background: linear-gradient(90deg, #ffe878 0%, #ffbf00 100%);
     color: #332013;
     cursor: pointer;
     font-weight: 600;

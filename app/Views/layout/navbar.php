@@ -10,11 +10,13 @@
             <li><a href="/#kue">KATALOG</a></li>
             <li><a href="/#tentang">TENTANG</a></li>
             <li><a href="/#kontak">KONTAK</a></li>
-            <?php if (session()->get('role') == "admin") { ?>
+            <?php
+            $role_login = session()->get('id_role');
+            if ($role_login == 1 or $role_login == 2) { ?>
             <li><a href="/produk">PRODUK</a></li>
             <li><a href="/kalkulator">KALKULATOR</a></li>
             <a class="mybutton btnlogin" href="/logout">LOGOUT</a>
-            <?php } else if (session()->get('role') != "admin") { ?>
+            <?php } else if ($role_login == 1 or $role_login == 2) { ?>
             <a class="mybutton btnlogin" href="/login">LOGIN</a>
             <?php   } ?>
 

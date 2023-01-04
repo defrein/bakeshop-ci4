@@ -24,38 +24,37 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
+                    <label for="id_kategori" class="col-sm-2 col-form-label">Kategori</label>
                     <div class="col-sm-10">
-                        <?php echo "Database:{$produk['kategori']}" ?>
-                        <?php echo "Old:" . old('kategori') ?>
-                        <select id="kategori" name="kategori" class="custom-select"
+
+                        <select id="id_kategori" name="id_kategori" class="custom-select"
                             aria-describedby="kategoriHelpBlock">
-                            <option <?php if (old('kategori')) {
-                                        if (old('kategori') == "kue") {
+                            <option <?php if (old('id_kategori')) {
+                                        if (old('id_kategori') == "1") {
                                             echo "selected";
                                         } else {
                                             echo "";
                                         }
                                     } else {
-                                        if ($produk['kategori'] == "kue") {
+                                        if ($produk['id_kategori'] == "1") {
                                             echo "selected";
                                         } else {
                                             echo "";
                                         }
-                                    }; ?> value="kue">Kue</option>
-                            <option <?php if (old('kategori')) {
-                                        if (old('kategori') == "snack") {
+                                    }; ?> value="1">Kue</option>
+                            <option <?php if (old('id_kategori')) {
+                                        if (old('id_kategori') == "2") {
                                             echo "selected";
                                         } else {
                                             echo "";
                                         }
                                     } else {
-                                        if ($produk['kategori'] == "snack") {
+                                        if ($produk['id_kategori'] == "2") {
                                             echo "selected";
                                         } else {
                                             echo "";
                                         }
-                                    }; ?> value="snack">Snack</option>
+                                    }; ?> value="2">Snack</option>
                         </select>
 
                         <span id="kategoriHelpBlock" class="form-text text-muted">Pilih Kategori</span>
