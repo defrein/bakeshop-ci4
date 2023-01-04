@@ -15,7 +15,7 @@
                         <div class="card-body">
                             <h4 class="card-title"><?= $produk['nama_produk']; ?></h4>
                             <h5 class="card-text" style="text-transform: capitalize;"><small
-                                    class="text-muted"><?= $produk['kategori']; ?></small></h5>
+                                    class="text-muted"><?= $produk['jenis_kategori']; ?></small></h5>
                             <h5 class="card-text">Rp<?= $produk['harga']; ?></h5>
                             <p class="card-text text-muted"><?= $produk['created_at']; ?></p>
                             <p class="card-text text-muted">Diupdate pada: <?= $produk['updated_at']; ?></p>
