@@ -328,7 +328,7 @@ header p {
 #kue,
 #snack,
 #tentang {
-    padding-top: 60px;
+    padding: 60px 0;
     min-height: 650px;
     position: relative;
 }
@@ -362,7 +362,7 @@ header p {
 }
 
 #kue .swiper {
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 0 50px;
 }
 
@@ -375,7 +375,7 @@ header p {
     width: 200px;
     display: block;
     margin: auto;
-    padding: 20px 10px;
+    padding: 10px;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -394,15 +394,29 @@ header p {
     -o-border-radius: 20px;
 }
 
+.swiper-wrapper {
+    padding: 40px 0;
+}
+
 .text_box {
     height: 100px;
     text-align: center;
-    padding: 20px 10px;
+    padding: 5px 10px 20px 10px;
     font-size: 12px;
+    /* background: #FFBF00; */
 }
 
 .text_box h1 {
     color: #FFE878;
+    /* background: #b0b0b0; */
+    /* height: 50px; */
+    font-size: 16px;
+}
+
+.text_box p {
+    margin-top: 10px;
+    color: #b0b0b0;
+    font-size: 13px;
 }
 
 .text-closing {
@@ -456,6 +470,8 @@ header p {
 
 #kue .swiper-pagination-bullet {
     background: #FFE878;
+    /* margin-bottom: -20px; */
+    z-index: 9;
 }
 
 
@@ -466,7 +482,7 @@ header p {
 }
 
 #snack .swiper {
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 0 50px;
 }
 
@@ -474,6 +490,10 @@ header p {
 #snack .text_box h1,
 #snack .text-closing p {
     color: #523A28;
+}
+
+#snack .text_box p {
+    color: #9c6f4d;
 }
 
 #snack .line-left,
@@ -496,6 +516,29 @@ header p {
 
 #snack .swiper-pagination-bullet {
     background: #523a28;
+}
+
+
+/* ---------------- SECTION REVIEW ------------- */
+
+#review {
+    margin: auto;
+    padding: 50px;
+    background: #523A28;
+}
+
+#review h1 {
+    margin: 20px;
+    color: #FFE878;
+}
+
+#review * {
+    color: #FFE878;
+}
+
+.web-review {
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -992,6 +1035,11 @@ footer .mycontainer {
         top: -20%;
     }
     /* === KUE === */
+    #kue,
+    #snack,
+    #tentang {
+        padding-bottom: 0;
+    }
     .title-section .line-left,
     .title-section .line-right {
         flex: 1;

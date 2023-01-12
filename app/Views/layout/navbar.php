@@ -16,7 +16,7 @@
             <li><a href="/produk">PRODUK</a></li>
             <li><a href="/kalkulator">KALKULATOR</a></li>
             <a class="mybutton btnlogin" href="/logout">LOGOUT</a>
-            <?php } else if ($role_login == 1 or $role_login == 2) { ?>
+            <?php } else if ($role_login == null) { ?>
             <a class="mybutton btnlogin" href="/login">LOGIN</a>
             <?php   } ?>
 

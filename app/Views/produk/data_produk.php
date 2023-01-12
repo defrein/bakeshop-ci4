@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <p class="my-3">Halo, <?php echo session()->get('username') ?> <span><a href="/admin">Kelola
+            <p class="my-3">Halo, <?php echo session()->get('username') ?> <span> | <a href="/admin">Kelola
                         Admin</a></span></p>
             <h2 class="mt-3">Data Produk</h2>
             <?php if (session()->getFlashdata('pesan')) : ?>

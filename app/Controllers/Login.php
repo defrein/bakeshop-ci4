@@ -22,9 +22,14 @@ class Login extends BaseController
                 $err = "Silakan masukkan username dan password";
             }
             if (empty($err)) {
-                $dataAdmin = $this->loginModel->where("username", $username)->first();
-                if (isset($dataAdmin['password']) != md5(isset($password))) {
-                    $err = "Username dan password tidak sesuai";
+                $dataAdmin = $this->loginModel->where("username", $username);
+                if ($dataAdmin->countAllResults() == 0) {
+                    $err = "Username tidak terdaftar";
+                } else {
+                    $dataAdmin = $dataAdmin->first();
+                    if ($dataAdmin['password'] != md5($password)) {
+                        $err = "Username dan password tidak sesuai";
+                    }
                 }
             }
             if (empty($err)) {

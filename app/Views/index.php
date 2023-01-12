@@ -39,6 +39,7 @@
                     </div>
                     <div class="text_box">
                         <h1><?= $k['nama_produk']; ?></h1>
+                        <p>Rp<?= $k['harga']; ?></p>
                     </div>
                 </div>
                 <?php endforeach; ?>
@@ -77,6 +78,7 @@
                     </div>
                     <div class="text_box">
                         <h1><?= $s['nama_produk']; ?></h1>
+                        <p>Rp<?= $k['harga']; ?></p>
                     </div>
                 </div>
                 <?php endforeach; ?>
@@ -97,6 +99,15 @@
             <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/6281348955744"> <img alt="Chat on WhatsApp"
                     src="/img/WhatsAppButtonGreenMedium.svg" /> -->
         </div>
+    </div>
+</section>
+<section id="review" class="container">
+    <div class="title-section">
+        <h1>REVIEW COSTUMER</h1>
+    </div>
+    <div class="web-review">
+
+        <script defer async src='https://cdn.trustindex.io/loader.js?e38e233114a76847d8668897df6'></script>
     </div>
 </section>
 <!-- <div class="left-circle"></div> -->
@@ -130,9 +141,12 @@
                 </div>
                 <!-- <h3>Kaela Kovalskia</h3> -->
                 <h2>HESTY BAKESHOP</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit incidunt blanditiis.
-                    Corrupti, corporis! Libero, accusantium quam, blanditiis et aliquam, est dolorum ex amet vel hic
-                    optio quibusdam repudiandae sed.</p>
+                <p>Hesty Bakeshop adalah sebuah UMKM yang bergerak di bidang kuliner kue basah dan kering. <br><br>
+                    Sejak
+                    tahun
+                    2006 kami
+                    telah menghasilkan kue yang berkualitas tinggi dan dipercaya oleh banyak konsumen di Kota
+                    Banjarmasin dan sekitarnya.</p>
             </div>
             <div class="tentang-sosmed">
                 <div class="sosmed-image">
@@ -159,6 +173,7 @@
         </div>
     </div>
 </section>
+
 <!-- ============== SECTION KONTAK ============== -->
 <section id="kontak">
     <div class="title-section">

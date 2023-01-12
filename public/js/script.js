@@ -6,7 +6,9 @@ menuToggle.addEventListener('click', function() {
 })
 
 let swiper = new Swiper(".card_slider", {
+
     slidesPerView: 4,
+    centerInsufficientSlides: true,
     spaceBetween: 50,
     pagination: {
         el: ".swiper-pagination",
