@@ -96,8 +96,6 @@
                     <div class="mywaicon"></div>
                 </div>
             </a>
-            <!-- <a aria-label="Chat on WhatsApp" href="https://wa.me/6281348955744"> <img alt="Chat on WhatsApp"
-                    src="/img/WhatsAppButtonGreenMedium.svg" /> -->
         </div>
     </div>
 </section>

@@ -3,8 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <p class="my-3">Halo, <?php echo session()->get('username') ?> <span><a href="/produk">Kembali ke Data
-                        Produk</a></span></p>
+            <p class="my-3">Halo, <?php echo session()->get('username') ?></p>
             <h2 class="mt-3">Data Admin</h2>
             <?php if (session()->getFlashdata('pesan')) : ?>
             <div class="alert alert-success" role="alert">
